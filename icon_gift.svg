@@ -1,0 +1,15 @@
+<svg id="V-icon-gift" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <rect id="Rectangle_24169" data-name="Rectangle 24169" width="29" height="29" fill="none"/>
+  <g id="GIFT_icon" data-name="GIFT icon" transform="translate(3.584 2.5)">
+    <path id="Path_843" data-name="Path 843" d="M415.829,32.6v4.089h4.19a4.09,4.09,0,1,0-4.19-4.089Zm.442,3.015a4.117,4.117,0,0,1,3.482-4.027,4.041,4.041,0,0,1,.047.583,4.117,4.117,0,0,1-3.529,4.033Z" transform="translate(-404.801 -28.505)" fill="#ff0016"/>
+    <path id="Path_844" data-name="Path 844" d="M421.04,54.244a4.028,4.028,0,0,0-.047-.583,4.329,4.329,0,0,1,.709-.063,4.206,4.206,0,0,1,3.626,2.045,4.17,4.17,0,0,1-4.067,3.119h-3.75v-.485A4.117,4.117,0,0,0,421.04,54.244Z" transform="translate(-406.282 -50.582)" fill="#be212f"/>
+    <path id="Path_845" data-name="Path 845" d="M350.185,28.5a4.09,4.09,0,1,0-.225,8.178q.112,0,.225,0h4.19V32.59A4.141,4.141,0,0,0,350.185,28.5Zm3.75,7.693a4.117,4.117,0,0,1-3.527-4.033,3.968,3.968,0,0,1,.047-.583,4.117,4.117,0,0,1,3.481,4.027Z" transform="translate(-343.348 -28.5)" fill="#ff0016"/>
+    <path id="Path_846" data-name="Path 846" d="M351.41,54.244a3.943,3.943,0,0,1,.047-.583,4.331,4.331,0,0,0-.709-.063,4.2,4.2,0,0,0-3.625,2.045,4.17,4.17,0,0,0,4.067,3.119h3.75v-.485A4.117,4.117,0,0,1,351.41,54.244Z" transform="translate(-344.352 -50.582)" fill="#be212f"/>
+    <rect id="Rectangle_23852" data-name="Rectangle 23852" width="19.906" height="10.33" transform="translate(0.863 13.345)" fill="#ffe13a"/>
+    <path id="Path_847" data-name="Path 847" d="M337.743,101.749h7.94v-4.3a.872.872,0,0,0-.882-.86H324.949a.872.872,0,0,0-.882.86v4.3h8.382" transform="translate(-324.067 -88.402)" fill="#ffe13a"/>
+    <rect id="Rectangle_23853" data-name="Rectangle 23853" width="19.906" height="1.722" transform="translate(0.863 13.345)" fill="#d2b826"/>
+    <rect id="Rectangle_23854" data-name="Rectangle 23854" width="4.412" height="15.065" transform="translate(8.822 8.611)" fill="#be212f"/>
+    <path id="Path_850" data-name="Path 850" d="M402,83.959a2.121,2.121,0,0,0-2.358-1.722,2.09,2.09,0,0,0-2.246,1.722Z" transform="translate(-388.582 -75.779)" fill="#ff0016"/>
+    <rect id="Rectangle_23855" data-name="Rectangle 23855" width="4.412" height="5.127" transform="translate(8.822 8.117)" fill="#ff0016"/>
+  </g>
+</svg>
