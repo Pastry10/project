@@ -47,7 +47,7 @@
     flex-direction: column;
 }
 .nav-right-top{
-    height: 30px;
+    height: 35px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -56,6 +56,12 @@
     height: 50%;
 }
 .top-form-input-group {
+    /* width: 140px;
+    height: 26px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,6 +99,8 @@
     align-items: center;
 }
 .productTabs {
+    font-size: 14px;
+    font-weight: 700;
     height: 100%;
     display: flex;
     align-items: center;
@@ -107,7 +115,7 @@
 li{
     color: white;
     padding: 10px;
-    font-size: 14pt;
+    /* font-size: 14pt; */
 }   
 .nav-right-bottom{
     display: flex;
@@ -117,6 +125,10 @@ ul{
     display: flex;
 }
 .top-form-input-group {
+    margin: 0 5px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
 }
@@ -147,17 +159,17 @@ ul{
 }
 .title-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
+    text-align: left;
     justify-content: flex-start;
     position: relative;
-    top: 50%;
+    top: 40%;
 }
 .hero-banner-title {
     color: #002E6C;
@@ -180,7 +192,7 @@ ul{
 }
 .game-container {
     max-width: 1500px;
-    width: 100%;
+    width: 85%;
     border-radius: 12px;
     padding: 15px;
     margin-right: auto;
@@ -202,7 +214,7 @@ ul{
 }
 .main-area {
     width: 100%;
-    height: 500PX;
+    height: 450pX;
     background-image: url(KV-01.jpg);
     display: block;
     object-fit: cover;
@@ -210,15 +222,25 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
-.all-game-container {
+/* .game-container {
     width: 85%;
     margin: 0 auto 3rem auto;
-}
+    position: relative;
+    object-fit: cover;
+    background-position: center center;
+    background-size: cover;
+} */
 .product-content {
+    width: 100%;
     display: grid;
     border-radius: 12px;
+    object-fit: cover;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 250px);
     grid-gap: 1rem;
@@ -227,11 +249,20 @@ ul{
      "sub-1 sub-2 sub-3 sub-4"
 }
 .main-left-banner {
+    width: 100%;
     border-radius: 12px;
+    object-fit: cover;
     grid-area: main-left;
     background-image: url(img/Live_Baccarat.png);
+    background-position: top right;
+    background-size: 100%;
     position: relative;
+    /* transition: transform .3s;
+    transform: right center; */
 }
+/* .main-left-banner:hover {
+    transform: scale(1.2);
+} */
 .main-right-banner {
     border-radius: 12px;
     grid-area: main-right;
@@ -264,11 +295,20 @@ ul{
 }
 .provider-icon {
     /* width: 100%; */
+    width: 8%;
     height: 100%;
     position: absolute;
     top: 10px;
-    right: 10px;
-    /* vertical-align: middle; */
+    right: 20px;
+    vertical-align: middle;
+}
+.provider-icon-sm {
+    width: 16%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    vertical-align: middle;
 }
 .product-text,
 .product-text2,
@@ -284,7 +324,7 @@ ul{
 }
 .product-title,
 .product-info-title{
-    font-size: 16px;
+    font-size: 21px;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -303,16 +343,16 @@ span {
     vertical-align: middle;
     transition: transform .5s ease;
 }
-.background-image:hover img {
+/* .background-image:hover img {
     transform: scale(1.25);
     cursor: pointer;
-}
+} */
 
 /* Game area 2 */
 
 .game-container2 {
     max-width: 1500px;
-    width: 100%;
+    width: 85%;
     border-radius: 12px;
     padding: 15px;
     margin-right: auto;
@@ -355,7 +395,7 @@ span {
 }
 .game-container3 {
     max-width: 1500px;
-    width: 100%;
+    width: 85%;
     border-radius: 12px;
     padding: 0px 15px 50px 15px;
     margin-right: auto;
@@ -371,6 +411,13 @@ span {
     grid-template-areas:
      "small-1-banner small-2-banner small-3-banner small-4-banner small-5-banner"
 }
+/* .product-content .main-left-banner background-image {
+    transition: transform .3s;
+    transform: right center;
+}
+.product-content .main-left-banner background-image:hover {
+    transform: scale(1.2);
+} */
 .small-1-banner {
     border-radius: 12px;
     grid-area: small-1-banner;
@@ -443,4 +490,326 @@ span {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+}
+@media screen and (max-width: 1650px) {
+    .game-container {
+        width: 80%;
+        margin: 0 auto 3rem auto;
+        position: relative;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+    }
+    .product-content {
+        width: 100%;
+        display: grid;
+        border-radius: 12px;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 220px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "main-left main-left main-right main-right"
+         "sub-1 sub-2 sub-3 sub-4"
+    }
+    .main-left-banner {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+        grid-area: main-left;
+        background-image: url(img/Live_Baccarat.png);
+        background-position: top right;
+        background-size: 100%;
+        position: relative;
+        /* transition: transform .3s;
+        transform: right center; */
+    }
+    /* .main-left-banner:hover {
+        transform: scale(1.2);
+    } */
+    .main-right-banner {
+        border-radius: 12px;
+        grid-area: main-right;
+        background-image: url(img/Live_SpeedBaccarat.png);
+        position: relative;
+    }
+    .sub-1-banner {
+        border-radius: 12px;
+        grid-area: sub-1;
+        background-image: url(img/Live_Roulette.png);
+        position: relative;
+    }
+    .sub-2-banner {
+        border-radius: 12px;
+        grid-area: sub-2;
+        background-image: url(img/Live_SicBo.png);
+        position: relative;
+    }
+    .sub-3-banner {
+        border-radius: 12px;
+        grid-area: sub-3;
+        background-image: url(img/Live_DragonTiger.png);
+        position: relative;
+    }
+    .sub-4-banner {
+        border-radius: 12px;
+        grid-area: sub-4;
+        background-image: url(img/Live_Blackjack.png);
+        position: relative;
+    }
+    .provider-icon-sm {
+        width: 16%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        vertical-align: middle;
+    }
+    .product-text,
+    .product-text2,
+    .product-text3 {
+        font-size: 1rem;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        height: 100%;
+    }
+    .product-title,
+    .product-info-title{
+        font-size: 21px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        font-family: Arial, Verdana, sans-serif;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+    }
+    span {
+        background-color: #DF3333;
+        padding: 0 0.4rem;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    .background-image {
+        border-radius: 12px;
+        vertical-align: middle;
+        transition: transform .5s ease;
+    }
+    /* .background-image:hover img {
+        transform: scale(1.25);
+        cursor: pointer;
+    } */
+    
+    /* Game area 2 */
+    
+    .game-container2 {
+        max-width: 1500px;
+        width: 85%;
+        border-radius: 12px;
+        padding: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+    .product-header2 {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 35px 0 10px 0;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        line-height: 1;
+        gap: 1rem;
+    }
+    .product-content2 {
+        display: grid;
+        border-radius: 12px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 250px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "main-left-banner2 main-left-banner2 main-right-banner2 main-right-banner2"
+    }
+    .main-left-banner2 {
+        border-radius: 12px;
+        grid-area: main-left-banner2;
+        background-image: url(img/Games_VirtualBaccarat.png);
+        position: relative;
+    }
+    .main-right-banner2 {
+        border-radius: 12px;
+        grid-area: main-right-banner2;
+        background-image: url(img/Games_Royal\ DragonBouns.png);
+        position: relative;
+    }
+    .game-container3 {
+        max-width: 1500px;
+        width: 85%;
+        border-radius: 12px;
+        padding: 0px 15px 50px 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+    .product-content3 {
+        display: grid;
+        border-radius: 12px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 250px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "small-1-banner small-2-banner small-3-banner small-4-banner small-5-banner"
+    }
+    /* .product-content .main-left-banner background-image {
+        transition: transform .3s;
+        transform: right center;
+    }
+    .product-content .main-left-banner background-image:hover {
+        transform: scale(1.2);
+    } */
+    .small-1-banner {
+        border-radius: 12px;
+        grid-area: small-1-banner;
+        background-image: url(img/Games_MoneyRoll.png);
+        position: relative;
+    }
+    .small-2-banner {
+        border-radius: 12px;
+        grid-area: small-2-banner;
+        background-image: url(img/Games_RoyalBaccarat.png);
+        position: relative;
+    }
+    .small-3-banner {
+        border-radius: 12px;
+        grid-area: small-3-banner;
+        background-image: url(img/Games_RoyalBlackjack5Boxes.png);
+        position: relative;
+    }
+    .small-4-banner {
+        border-radius: 12px;
+        grid-area: small-4-banner;
+        background-image: url(img/Games_RoyalBlackjack.png);
+        position: relative;
+    }
+    .small-5-banner {
+        border-radius: 12px;
+        grid-area: small-5-banner;
+        background-image: url(img/Games_RoyalRoulette.png);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-area {
+        width: 100%;
+        height: 315pX;
+        background-image: url(KV-01.jpg);
+        display: block;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+    .product-content {
+        width: 100%;
+        display: grid;
+        border-radius: 4px;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 180px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "main-left main-left main-right main-right"
+         "sub-1 sub-2 sub-3 sub-4"
+    }
+    .game-container {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        position: relative;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+    }
+    .provider-icon {
+        /* width: 100%; */
+        width: 3%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        right: 60px;
+        vertical-align: middle;
+    }
+    .provider-icon-sm {
+        width: 6%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        right: 60px;
+        vertical-align: middle;
+    }
+    .product-header {
+        font-size: 1.7rem;
+        font-weight: 600;
+        padding: 20px 0 10px 0;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        line-height: 1;
+        gap: 1rem;
+    }
+    .product-header2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        padding: 20px 0 10px 0;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        line-height: 1;
+        gap: 1rem;
+    }
+    .product-content2 {
+        display: grid;
+        border-radius: 12px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 180px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "main-left-banner2 main-left-banner2 main-right-banner2 main-right-banner2"
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .main-area {
+        width: 100%;
+        height: 300pX;
+        background-image: url(KV-01.jpg);
+        display: block;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
 }
