@@ -7,7 +7,7 @@
 }
 .nav{
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     /* opacity: 0; */
@@ -24,7 +24,7 @@
     height: 100%;
     color: white;
     background-color: #002E6C;
-    -webkit-clip-path: polygon(0% -0%, 0%   100%,80% 100%,100% 0%)!important;
+    /* -webkit-clip-path: polygon(0% -0%, 0%   100%,80% 100%,100% 0%)!important; */
     display: flex;
     align-items: center;
 }
@@ -32,7 +32,7 @@
     max-width: 70%;
     height: auto;
     padding-left: 15px;
-    width: 100px;
+    width: 100%;
 }
 .h4{
     font-size: 12px;
@@ -93,11 +93,20 @@
 }
 .nav-right-bottom{
     width: 100%;
-    height: 30px;
+    height: 50%;
     background-color: #3A498E;
     display: flex;
     align-items: center;
 }
+
+.navbar-toggle {
+    display: none;
+}
+/* .nav-hamburger {
+    display: none;
+} */
+/* 2023/11/21 新增 */
+
 .productTabs {
     font-size: 14px;
     font-weight: 700;
@@ -107,10 +116,20 @@
     justify-content: flex-start;
 }
 .productTabs-others {
+    font-size: 14px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.productTabs-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.productTabs-others-text {
+    background-color: #3A498E;
 }
 li{
     color: white;
@@ -161,7 +180,7 @@ ul{
     width: 100%;
     max-width: 1500px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 5%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -215,7 +234,7 @@ ul{
 .main-area {
     width: 100%;
     height: 450pX;
-    background-image: url(KV-01.jpg);
+    background-image: url(KV-02.png);
     display: block;
     object-fit: cover;
     background-position: center center;
@@ -224,7 +243,9 @@ ul{
     flex-shrink: 0;
     overflow: hidden;
 }
-
+.nav-list {
+    display: none;
+}
 /* .game-container {
     width: 85%;
     margin: 0 auto 3rem auto;
@@ -294,20 +315,21 @@ ul{
     position: relative;
 }
 .provider-icon {
-    /* width: 100%; */
-    width: 8%;
-    height: 100%;
     position: absolute;
+    width: 8%;
     top: 10px;
-    right: 20px;
-    vertical-align: middle;
+    right: 16px;
 }
 .provider-icon-sm {
-    width: 16%;
-    height: 100%;
     position: absolute;
+    width: 16%;
     top: 10px;
-    right: 30px;
+    right: 8px;
+}
+.provider-icon-img {
+    width: 100%;
+    height: 100%;
+    border-style: none;
     vertical-align: middle;
 }
 .product-text,
@@ -492,8 +514,22 @@ span {
     background-position: center center;
 }
 @media screen and (max-width: 1650px) {
+    .title-container {
+        width: 100%;
+        max-width: 1350px;
+        padding-right: 15px;
+        padding-left: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        position: relative;
+        top: 40%;
+    }
     .game-container {
-        width: 80%;
+        width: 85%;
         margin: 0 auto 3rem auto;
         position: relative;
         object-fit: cover;
@@ -560,12 +596,22 @@ span {
         background-image: url(img/Live_Blackjack.png);
         position: relative;
     }
-    .provider-icon-sm {
-        width: 16%;
-        height: 100%;
+    .provider-icon {
         position: absolute;
+        width: 8%;
         top: 10px;
-        right: 30px;
+        right: 16px;
+    }
+    .provider-icon-sm {
+        position: absolute;
+        width: 16%;
+        top: 10px;
+        right: 8px;
+    }
+    .provider-icon-img {
+        width: 100%;
+        height: 100%;
+        border-style: none;
         vertical-align: middle;
     }
     .product-text,
@@ -634,7 +680,7 @@ span {
         display: grid;
         border-radius: 12px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 250px);
+        grid-template-rows: repeat(1, 220px);
         grid-gap: 1rem;
         grid-template-areas:
          "main-left-banner2 main-left-banner2 main-right-banner2 main-right-banner2"
@@ -708,11 +754,25 @@ span {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1450px) {
+    .title-container {
+        width: 100%;
+        max-width: 1300px;
+        padding-right: 15px;
+        padding-left: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        position: relative;
+        top: 40%;
+    }
     .main-area {
         width: 100%;
         height: 315pX;
-        background-image: url(KV-01.jpg);
+        background-image: url(KV-02.png);
         display: block;
         object-fit: cover;
         background-position: center center;
@@ -737,7 +797,7 @@ span {
          "sub-1 sub-2 sub-3 sub-4"
     }
     .game-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto 3rem auto;
         position: relative;
         object-fit: cover;
@@ -745,20 +805,21 @@ span {
         background-size: cover;
     }
     .provider-icon {
-        /* width: 100%; */
-        width: 3%;
-        height: 100%;
         position: absolute;
+        width: 8%;
         top: 10px;
-        right: 60px;
-        vertical-align: middle;
+        right: 16px;
     }
     .provider-icon-sm {
-        width: 6%;
-        height: 100%;
         position: absolute;
+        width: 16%;
         top: 10px;
-        right: 60px;
+        right: 8px;
+    }
+    .provider-icon-img {
+        width: 100%;
+        height: 100%;
+        border-style: none;
         vertical-align: middle;
     }
     .product-header {
@@ -791,19 +852,237 @@ span {
         display: grid;
         border-radius: 12px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 180px);
+        grid-template-rows: repeat(1, 150px);
         grid-gap: 1rem;
         grid-template-areas:
          "main-left-banner2 main-left-banner2 main-right-banner2 main-right-banner2"
     }
-    
+    .footer-top-container {
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1301px) {
+    .hero-banner-title {
+        font-size: 2.8vw;
+    }
+    .banner-description {
+        font-size: 1.8vw;
+    }
+    .productTabs {
+        font-size: 13.5px;
+        font-weight: 600;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .product-content {
+        width: 100%;
+        display: grid;
+        border-radius: 12px;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 180px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "main-left main-left main-right main-right"
+         "sub-1 sub-2 sub-3 sub-4"
+    }
+    .product-content3 {
+        display: grid;
+        border-radius: 12px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 180px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "small-1-banner small-2-banner small-3-banner small-4-banner small-5-banner"
+    }
+    .footer-top-container {
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 900px;
+    }
+    .product-title, .product-info-title {
+        font-size: 1.8vw;
+        text-shadow: 2px 2px 2px #333;
+    }
+    .provider-icon {
+        width: 14%;
+        top: 15px;
+        left: 20px;
+        filter: grayscale(100%) brightness(550%);
+    }
+    .provider-icon-sm {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .top-form-input-group {
+        display: none;
+    }
+    .header-logo {
+        height: auto;
+        padding-left: 10%;
+        width: 100%;
+        max-width: 50%;
+    }
+    .nav-left {
+        width: 500px;
+        margin-left: 10%;
+    }
+    .productTabs {
+        display: none;
+    }
+    .productTabs-others {
+        display: none;
+    }
+    .nav-right-bottom {
+        display: none;
+    }
+    .nav-right-top {
+        background-color: #002E6C;
+    }
+    .game-container {
+        margin: 0 auto 2rem auto;
+    }
+    .product-content {
+        width: 100%;
+        display: grid;
+        border-radius: 12px;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 150px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "main-left main-left main-right main-right"
+         "sub-1 sub-2 sub-3 sub-4"
+    }
+    .product-content3 {
+        display: grid;
+        border-radius: 12px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 150px);
+        grid-gap: 1rem;
+        grid-template-areas:
+         "small-1-banner small-2-banner small-3-banner small-4-banner small-5-banner"
+    }
+    .login-button {
+        height: 35px;
+        margin-top: 30px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .Join-button {
+        height: 35px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    /* 漢堡選單 */
+    .nav-item {
+        margin: 1.3rem 0;
+        opacity: 1;
+        }
+    .nav-item:hover{
+        background-color: #ffe7d4;
+    }
+    .nav-link{
+        color: #fff;
+    }
+    .navbar-toggle:checked ~ .nav{
+        transform: scale(1, 1);
+        /* border: 1px solid grey;
+        display: block; */
+        /* margin-left: 15px; */
+    }
+    .navbar-toggle:checked ~ .nav .nav-item{
+        opacity: 1;
+        transition: opacity .2s ease-out .15s;
+    }
+    .navbar-toggle-label {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 7.5%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-hamburger{
+        position: relative;
+    }
+    .nav-hamburger,
+    .nav-hamburger::before,
+    .nav-hamburger::after { 
+        width: 30px;
+        height: 3px;
+        background: #57c8e7
+        /* line-height: 60px; */
+    }
+    .nav-hamburger::before,
+    .nav-hamburger::after {
+        content:'' ;
+        position: absolute;
+        left: 0;
+    }
+    .nav-hamburger::before {
+        bottom: 8px;
+    }  
+    .nav-hamburger::after{
+        top: 8px  ;
+    }
+    .navbar-toggle {
+        visibility: hidden;
+        position: absolute;
+    }
+    .provider-icon {
+        width: 14%;
+        top: 10px;
+        left: 15px;
+        filter: grayscale(100%) brightness(600%);
+    }
+    .provider-icon-sm {
+        width: 24%;
+        top: 5px;
+        left: 15px;
+        filter: grayscale(100%) brightness(600%);
+    }
+    .product-title, .product-info-title {
+        line-height: 1.5rem;
+    }
+    .product-header {
+        font-size: 1.5rem;
+        padding: 10px 0 10px 0;
+    }
+    .product-header2 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .nav{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        /* opacity: 0; */
+        /* background-color: aquamarine; */
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    }
     .main-area {
         width: 100%;
         height: 300pX;
-        background-image: url(KV-01.jpg);
+        background-image: url(KV-02.png);
         display: block;
         object-fit: cover;
         background-position: center center;
@@ -811,5 +1090,178 @@ span {
         background-repeat: no-repeat;
         flex-shrink: 0;
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .nav {
+        height: 50px;
+    }
+    .nav-left {
+        width: 300px;
+    }
+    .nav-right-top {
+        padding-right: 0px;
+    }
+    .Join-button {
+        width: 80px;
+        height: 30px;
+        margin-top: 25px;
+        font-size: 12px;
+        font-weight: 800;
+    }
+    .login-button {
+        width: 80px;
+        height: 30px;
+        margin-top: 25px;
+        margin-right: 0px;
+        font-size: 12px;
+        font-weight: 800;
+    }
+    .header-logo {
+        padding-left: 15px;
+        max-width: 80%;
+    }
+    .main-area {
+        height: 200px;
+    }
+    .title-container {
+        max-width: 500px;
+        top: 33%;
+    }
+    .hero-banner-title {
+        font-size: 4.68vw;
+    }
+    .banner-description {
+        font-size: 2.9vw;
+        width: 180px;
+    }
+    .product-header, .product-header2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .product-content {
+        width: 100%;
+        display: grid;
+        border-radius: 12px;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 150px);
+        grid-gap: 0.7rem;
+        grid-template-areas:
+        "main-left"
+        "main-right"
+    }
+    .product-content::after {
+        content: 'more ➤';
+        position: absolute;
+        top: 385px;
+        left: 78%;
+        margin: 0px;
+        color: #fff; 
+        cursor: pointer;
+        /* display: flex;
+        align-items: flex-end; */
+    }
+    .product-content2 {
+        display: grid;
+        border-radius: 12px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 150px);
+        grid-gap: 0.7rem;
+        grid-template-areas:
+        "main-left-banner2"
+        "main-right-banner2"
+    }
+    .product-content2::after {
+        content: 'more ➤';
+        position: absolute;
+        top: 1035px;
+        left: 78%;
+        margin: 0px;
+        color: #fff; 
+        cursor: pointer;
+        /* display: flex;
+        align-items: flex-end; */
+    }
+    .game-container2 {
+        padding: 0px;
+        width: 90%;
+    }
+    .product-content3 {
+        display: none;
+    }
+    .sub-1-banner {
+        display: none;
+    }
+    .sub-2-banner {
+        display: none;
+    }
+    .sub-3-banner {
+        display: none;
+    }
+    .sub-4-banner {
+        display: none;
+    }
+    .game-container {
+        margin: 0 auto 1rem auto;
+        width: 95%;
+    }
+    .product-title, .product-info-title {
+        font-size: 18px;
+    }
+    .main-left-banner {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+        grid-area: main-left;
+        background-image: url(img/Live_Baccarat.png);
+        background-position: top right;
+        background-size: 100%;
+        position: relative;
+        /* transition: transform .3s;
+        transform: right center; */
+    }
+    /* .main-left-banner:hover {
+        transform: scale(1.2);
+    } */
+    .main-right-banner {
+        border-radius: 12px;
+        grid-area: main-right;
+        background-image: url(img/Live_SpeedBaccarat.png);
+        position: relative;
+    }
+    .sub-1-banner {
+        border-radius: 12px;
+        grid-area: sub-1;
+        background-image: url(img/Live_Roulette.png);
+        position: relative;
+    }
+    .sub-2-banner {
+        border-radius: 12px;
+        grid-area: sub-2;
+        background-image: url(img/Live_SicBo.png);
+        position: relative;
+    }
+    .sub-3-banner {
+        border-radius: 12px;
+        grid-area: sub-3;
+        background-image: url(img/Live_DragonTiger.png);
+        position: relative;
+    }
+    .sub-4-banner {
+        border-radius: 12px;
+        grid-area: sub-4;
+        background-image: url(img/Live_Blackjack.png);
+        position: relative;
+    }
+    .product-text, .product-text2, .product-text3 {
+        width: 40%;
+    }
+    .provider-icon {
+        display: none;
     }
 }
